@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Origin的个人主页</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #d7f0f7;
+        }
+
+        header {
+            background-color: #333333;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 40px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        nav {
+            background-color: #666666;
+            color: #ffffff;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+        }
+
+        nav li {
+            margin: 0 10px;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            transition: color .2s ease-in-out;
+        }
+
+        nav a:hover {
+            color: #d7f0f7;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        section {
+            padding-bottom: 20px;
+            border-bottom: 1px solid #d9d9d9;
+        }
+
+        h2 {
+            font-size: 32px;
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        li {
+            margin: 5px 0;
+            font-size: 20px;
+            line-height: 1.6;
+        }
+
+        footer {
+            background-color: rgba(51, 51, 51, 0.5);
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        .welcome {
+            background-color: #89d3e7;
+            color: #333;
+            padding: 20px;
+            text-align: center;
+        }
+
+        a.personal-link {
+            color: #666;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .bottom-bar {
+            background-color: #333333;
+            color: #ffffff;
+            padding: 10px 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            font-size: 14px;
+            flex-direction: column;
+        }
+
+        .link-column {
+            display: flex;
+            flex-direction: column;
+            margin: 5px 0;
+        }
+
+        .thanks {
+            display: inline-block;
+            width: calc(50% - 1px);
+            text-align: right;
+            padding-right: 10px;
+        }
+
+        .line {
+            display: inline-block;
+            height: 20px;
+            border-left: 1px solid #ccc;
+            margin: 0 10px;
+        }
+
+        .version {
+            display: inline-block;
+            width: calc(50% - 1px);
+            color: #929292;
+            margin: 5px 0;
+            text-align: center;
+            padding-left: 10px;
+        }
+
+        .links {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        .link-column {
+            flex-basis: 50%;
+        }
+
+        .link-column li {
+            font-size: 16px;
+        }
+
+        .link-column:first-of-type {
+            margin-right: 20px;
+        }
+
+        .link-column:last-of-type {
+            margin-left: 20px;
+        }
+
+        .link-column a {
+            color: #1a1a1a;
+            text-decoration: none;
+            transition: color .2s ease-in-out;
+        }
+
+        .link-column a:hover {
+            color: #009dc9;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>欢迎来到Origin的个人主页!</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#about">关于我</a></li>
+            <li><a href="#doing">正在做</a></li>
+            <li><a href="#urls">相关链接</a></li>
+            <li><a href="#treasureBox">百宝箱</a></li>
+        </ul>
+    </nav>
+    <div class="welcome">
+        <p>欢迎访问我的个人主页.这里记录了我的一些信息,希望对您有所启发.</p>
+    </div>
+    <main>
+        <section id="about">
+            <h2>关于我</h2>
+            <p>你好,我叫Origin.我是一名位于地球的Web开发者。</p>
+        </section>
+        <section id="doing">
+            <h2>正在做...</h2>
+            <p>这个网站()</p>
+        </section>
+        <section id="urls">
+            <h2>相关链接</h2>
+            <ul class="links">
+                <li class="link-column">
+                    <ul>
+                        <li style="text-align: center;"><a href="https://space.bilibili.com/627017102">Bilibili</a></li>
+                        <li style="text-align: center;"><a href="https://space.bilibili.com/627017102">Bilibili</a></li>
+                    </ul>
+                </li>
+                <li class="link-column">
+                    <ul>
+                        <li style="text-align: center;"><a href="https://space.bilibili.com/627017102">Bilibili</a></li>
+                        <li style="text-align: center;"><a href="https://space.bilibili.com/627017102">Bilibili</a></li>
+                    </ul>
+                </li>
+                <li class="link-column">
+                    <ul>
+                        <li style="text-align: center;"><a href="https://space.bilibili.com/627017102">Bilibili</a></li>
+                        <li style="text-align: center;"><a href="https://space.bilibili.com/627017102">Bilibili</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+        <section id="treasureBox">
+            <h2>百宝箱</h2>
+            <button onclick="showRandomInfo()">点我!</button>
+            <div id="randomInfo"></div>
+        </section>
+    </main>
+    <footer>
+        <div class="bottom-bar">
+            <div>
+                <span class="copy-right">© 2023 Origin的个人主页</span>
+            </div>
+
+            <div class="version">
+                Version 0.0.1
+            </div>
+        </div>
+    </footer>
+</body>
+
+<script>
+    function showRandomInfo() {
+        // 随机生成一个数字
+        const randomNumber = Math.floor(Math.random() * 10);
+        // 根据数字生成不同的信息
+        let randomInfoText;
+        switch (randomNumber) {
+            case 0:
+                randomInfoText = "今天的天气真好?";
+                break;
+            case 1:
+                randomInfoText = "你知道吗？人类的大脑有1000亿个神经元！";
+                break;
+            case 2:
+                randomInfoText = "每次打开电脑，我都相信这次会发生奇迹。";
+                break;
+            case 3:
+                randomInfoText = "心情不好？去皮卡丘那里找个电疗吧!";
+                break;
+            case 4:
+                randomInfoText = "生活不止眼前的苟且，还有长长的 OPS 和支付宝。";
+                break;
+            case 5:
+                randomInfoText = "我站在钞票上，看热闹的人在下面看我。";
+                break;
+            case 6:
+                randomInfoText = "要想瘦成一道闪电，也得先胖成一团。";
+                break;
+            case 7:
+                randomInfoText = "天生我材必有用，前提是家里有 WiFi。";
+                break;
+            case 8:
+                randomInfoText = "人生没有过不去的坎，只有过不去的心理。";
+                break;
+            case 9:
+                randomInfoText = "我这个人脾气超好，只要没有人比我脾气更好就行了。";
+                break;
+            default:
+                randomInfoText = "糟糕，程序出错了！";
+                break;
+        }
+        // 将生成的信息显示在页面上
+        const randomInfoElement = document.getElementById("randomInfo");
+        randomInfoElement.innerHTML = randomInfoText;
+    }
+</script>
+
+</html>
