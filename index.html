@@ -1,260 +1,158 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh_CN">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Origin的个人主页</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <style>
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #d7f0f7;
-        }
-
-        header {
-            background-color: #333333;
-            color: #ffffff;
-            padding: 20px;
-            text-align: center;
-        }
-
-        h1 {
-            margin: 0;
-            font-size: 40px;
-            font-weight: bold;
-            text-transform: uppercase;
-        }
-
-        nav {
-            background-color: #666666;
-            color: #ffffff;
-            padding: 10px;
-            display: flex;
-            justify-content: center;
-        }
-
-        nav ul {
-            margin: 0;
-            padding: 0;
-            list-style: none;
-            display: flex;
-        }
-
-        nav li {
-            margin: 0 10px;
-        }
-
-        nav a {
-            color: #ffffff;
-            text-decoration: none;
-            font-size: 18px;
-            font-weight: bold;
-            transition: color .2s ease-in-out;
-        }
-
-        nav a:hover {
-            color: #d7f0f7;
-        }
-
-        main {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #ffffff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-            font-size: 18px;
-            line-height: 1.6;
-        }
-
-        section {
-            padding-bottom: 20px;
-            border-bottom: 1px solid #d9d9d9;
-        }
-
-        h2 {
-            font-size: 32px;
-            margin-top: 0;
-            margin-bottom: 15px;
-        }
-
-        ul {
-            margin: 0;
-            padding: 0;
-            list-style: none;
-        }
-
-        li {
-            margin: 5px 0;
-            font-size: 20px;
-            line-height: 1.6;
-        }
-
-        footer {
-            background-color: rgba(51, 51, 51, 0.5);
-            color: #ffffff;
-            padding: 20px;
-            text-align: center;
-            font-size: 14px;
-        }
-
-        .welcome {
-            background-color: #89d3e7;
-            color: #333;
-            padding: 20px;
-            text-align: center;
-        }
-
-        a.personal-link {
-            color: #666;
-            text-decoration: none;
-            font-size: 18px;
-            font-weight: bold;
-        }
-
-        .bottom-bar {
-            background-color: #333333;
-            color: #ffffff;
-            padding: 10px 20px;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-            font-size: 14px;
-            flex-direction: column;
-        }
-
-        .link-column {
-            display: flex;
-            flex-direction: column;
-            margin: 5px 0;
-        }
-
-        .thanks {
-            display: inline-block;
-            width: calc(50% - 1px);
-            text-align: right;
-            padding-right: 10px;
-        }
-
-        .line {
-            display: inline-block;
-            height: 20px;
-            border-left: 1px solid #ccc;
-            margin: 0 10px;
-        }
-
-        .version {
-            display: inline-block;
-            width: calc(50% - 1px);
-            color: #929292;
-            margin: 5px 0;
-            text-align: center;
-            padding-left: 10px;
-        }
-
-        .links {
-            display: flex;
-            justify-content: center;
-            margin-top: 10px;
-        }
-
-        .link-column {
-            flex-basis: 50%;
-        }
-
-        .link-column li {
-            font-size: 16px;
-        }
-
-        .link-column:first-of-type {
-            margin-right: 20px;
-        }
-
-        .link-column:last-of-type {
-            margin-left: 20px;
-        }
-
-        .link-column a {
-            color: #1a1a1a;
-            text-decoration: none;
-            transition: color .2s ease-in-out;
-        }
-
-        .link-column a:hover {
-            color: #009dc9;
-        }
-    </style>
+	<meta charset="utf-8">
+	<meta name="viewport"
+		content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+	<title>Origin</title>
+	<base href="/">
+	<link rel="icon" href="image\icon.png">
 </head>
 
-<body>
-    <header>
-        <h1>欢迎来到Origin的个人主页!</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="#about">关于我</a></li>
-            <li><a href="#doing">正在做</a></li>
-            <li><a href="#urls">相关链接</a></li>
-            <li><a href="#treasureBox">百宝箱</a></li>
-        </ul>
-    </nav>
-    <div class="welcome">
-        <p>欢迎访问我的个人主页.这里记录了我的一些信息,希望对您有所启发.</p>
-    </div>
-    <main>
-        <section id="about">
-            <h2>关于我</h2>
-            <p>你好,我叫Origin.我是一名位于地球的Web开发者。</p>
-        </section>
-        <section id="doing">
-            <h2>正在做...</h2>
-            <p>这个网站()</p>
-        </section>
-        <section id="urls">
-            <h2>相关链接</h2>
-            <ul class="links">
-                <li class="link-column">
-                    <ul>
-                        <li style="text-align: center;"><a href="https://space.bilibili.com/627017102">Bilibili</a></li>
-                        <li style="text-align: center;"><a href="https://space.bilibili.com/627017102">Bilibili</a></li>
-                    </ul>
-                </li>
-                <li class="link-column">
-                    <ul>
-                        <li style="text-align: center;"><a href="https://space.bilibili.com/627017102">Bilibili</a></li>
-                        <li style="text-align: center;"><a href="https://space.bilibili.com/627017102">Bilibili</a></li>
-                    </ul>
-                </li>
-                <li class="link-column">
-                    <ul>
-                        <li style="text-align: center;"><a href="https://space.bilibili.com/627017102">Bilibili</a></li>
-                        <li style="text-align: center;"><a href="https://space.bilibili.com/627017102">Bilibili</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </section>
-        <section id="treasureBox">
-            <h2>百宝箱</h2>
-            <button onclick="showRandomInfo()">点我!</button>
-            <div id="randomInfo"></div>
-        </section>
-    </main>
-    <footer>
-        <div class="bottom-bar">
-            <div>
-                <span class="copy-right">© 2023 Origin的个人主页</span>
-            </div>
+<body style="background-color:#323232;margin:0;">
+	<!-- header -->
+	<div>
+		<div id='' style="text-align:right;">
+			<ul
+				style="list-style-type:none;border-radius:0px 0px 5px 5px;margin:0;padding:0;overflow:hidden;background-color:#ffffff;position:fixed;top:0;width:100%;">
+				<li class='li'>
+					<a href='#' style='color:#323232;text-decoration:none;'>
+						<img src="image\icon.png" width="20" height="20" title="Homepage">
+					</a>
+				</li>
+				<li class='li'>
+					<a href="#1" style='color:#323232;text-decoration:none;'>
+						<strong title="简介">简介</strong>
+					</a>
+				</li>
+				<li class='li'>
+					<a href="#2" style='color:#323232;text-decoration:none;'>
+						<strong title="博客">博客</strong>
+					</a>
+				</li>
+				<li class='li'>
+					<p style="color:#999999;">
+						<strong title="分割线">|</strong>
+					</p>
+				</li>
+				<li class='li'>
+					<a href="javascript:void(null);"
+						style="color:#55aaff;text-decoration:none;text-shadow:0px 0px 8px #55aaff;">
+						<strong title="主站">主站</strong>
+					</a>
+				</li>
+				<li class='li'>
+					<a href="/about.html" style='color:#323232;text-decoration:none;'>
+						<strong title="关于">关于</strong>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
 
-            <div class="version">
-                Version 0.0.1
-            </div>
-        </div>
-    </footer>
+	<!-- main -->
+	<div>
+		<br><br><br><br>
+		<!-- main -->
+		<div>
+			<br>
+			<div style="text-align:center;border-radius: 15px;">
+				<img style="border-radius: 50%;" src="image\Origin.jpg" alt="加载失败" width="180" height="180"
+					title="Head portrait">
+			</div>
+			<h1 style="text-align:center;">
+				<a style="text-decoration:none;color:#ffffff;text-shadow:0px 0px 8px #cccccc;" title="Name">Origin</a>
+			</h1>
+			<p style="text-align:center;color: #55aaff;text-shadow:0px 0px 8px #55aaff">
+				A72
+			</p>
+			<br>
+			<p style="text-align:center;color:#cccccc;font-size:14px;">
+				#前言
+			</p>
+			<p style="text-align:center;color:#cccccc;font-size:14px;">
+				“你可以尽情的在编程中发挥自己的创作力，在编程中锻炼自己的逻辑思维；当你有了对编程的兴趣，学起来不就很简单了吗？”——竹林菌
+			</p>
+			<br>
+		</div>
+
+		<!-- 简介 -->
+		<div id="1">
+			<hr class="hr">
+			<h2 style="color:#ffffff;text-align:center;">简介</h2>
+			<p style="color:#cccccc;text-align:center;font-size:14px;"># 竹林菌的简介</p>
+			<br>
+			<div class="block" style="background-color:#ffffff;">
+				<br>
+				<h1 style="color:#00aaff;text-align:center;text-shadow:0px 0px 8px #00aaff">
+					:-)
+				</h1>
+				<p style="color:#232323;text-align:center;">
+					UI细节拉满,Web开发还行，是一个萌新 (真的 (心虚
+					<br>
+					kitten制作力很好啦））
+					<br>
+					重新定义萌新一词）
+					<br>
+					据我所知好像并不是人
+				</p>
+				<br>
+			</div>
+			<br>
+		</div>
+
+		<!-- 博客 -->
+		<div id="2">
+			<h2 style="color:#ffffff;text-align:center;">博客</h2>
+			<p style="color:#cccccc;text-align:center;font-size:14px;"># 竹林菌的博客</p>
+			<div class="block" id="blog">
+				
+			</div>
+			<br>
+		</div>
+
+		<!-- 更新信息 -->
+		<div class="block" style="background-color:#424242;border-radius:5px 5px 0px 0px;margin:0px 0px 0px 0px;">
+			<p style="color:#cccccc;text-align:center;font-size:14px;margin:4px 0px 4px 0px;">
+				<span><a style="text-decoration:none;color:#9cbdff;"
+						href="https://space.bilibili.com/627017102">@Zhulinjun</a></span> <span>for 2024</span>
+			</p>
+			<p style="color:#cccccc;text-align:center;font-size:14px;margin:4px 0px 4px 0px;">
+				1.6.0_beta
+			</p>
+			<p style="color:#888888;text-align:center;font-size:10px;margin:4px 0px 4px 0px;">
+				| 2024-3-23 23:46:29 |
+			</p>
+
+			<!-- <p style="color:#888888;text-align:center;font-size:10px;margin:4px 0px 0px 0px;">
+				137+118+101行代码
+			</p> -->
+		</div>
 </body>
-
-<script type="text/javascript" src="index.js"></script>
+<script src="scripts\scripts.js"></script>
+<link rel="stylesheet" href="css\style.css">
 
 </html>
+
+<!-- 
+主版本号：当功能模块有较大的变动，比如增加多个模块或者整体架构发生变化。此版本号由项目决定是否修改。
+子版本号：当功能有一定的增加或变化，比如增加了对权限控制、增加自定义视图等功能。此版本号由项目决定是否修改。
+阶段版本号：一般是 Bug 修复或是一些小的变动，要经常发布修订版，时间间隔不限，修复一个严重的bug即可发布一个修订版。此版本号由项目经理决定是否修改。
+日期版本号:用于记录修改项目的当前日期，每天对项目的修改都需要更改日期版本号。此版本号由开发人员决定是否修改。
+希腊字母版本号:此版本号用于标注当前版本的软件处于哪个开发阶段，当软件进入到另一个阶段时需要修改此版本号。此版本号由项目决定是否修改。
+
+base：
+alpha：内部版本
+beta：测试版
+demo：演示版
+enhance：增强版
+free：自由版
+full version：完整版，即正式版
+lts：长期维护版本
+release：发行版
+rc：即将作为正式版发布
+standard：标准版
+ultimate：旗舰版
+upgrade：升级版
+ -->
