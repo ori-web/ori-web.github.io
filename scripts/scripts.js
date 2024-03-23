@@ -15,7 +15,7 @@ document.addEventListener('visibilitychange', function () {
 
 //加载博客
 // 获取blog文件夹下所有JSON文件
-fetch('blog/')
+fetch('/blog/')
     .then(response => response.text())
     .then(text => {
         // 解析HTML文本以获取所有JSON文件名
