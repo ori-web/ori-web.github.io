@@ -14,10 +14,13 @@ document.addEventListener('visibilitychange', function () {
 });
 
 //加载博客
-// 获取blog文件夹下所有JSON文件
-fetch('/blog/')
+// 获取scripts文件夹下所有JSON文件
+
+fetch('/scripts')
     .then(response => response.text())
     .then(text => {
+        const blogContent = document.getElementById('blog');
+        blogContent.innerHTML = ''; // 将内容置空
         // 解析HTML文本以获取所有JSON文件名
         const parser = new DOMParser();
         const htmlDoc = parser.parseFromString(text, 'text/html');
@@ -64,10 +67,10 @@ fetch('/blog/')
         });
     });
 
-function BlogFrom(){
+function BlogFrom() {
     const blogContent = document.getElementById('blog');
     blogContent.innerHTML = ''; // 将内容置空
-    fetch('blog/')
+    fetch('/scripts')
         .then(response => response.text())
         .then(text => {
             // 解析HTML文本以获取所有JSON文件名
@@ -116,3 +119,4 @@ function BlogFrom(){
             });
         });
 }
+//console.log("[scripts.js] Latest Update Time:2024-3-24 22:08:11")
