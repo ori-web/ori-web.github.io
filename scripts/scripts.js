@@ -37,7 +37,7 @@ function LoadBlogList() {
                 content.classList.add('content');
 
                 const link = document.createElement('a');
-                link.href = `/blog.html?url=${blog.url}`;
+                link.href = `/blog.html?path=${blog.path}`;
                 link.textContent = '查看详情';
                 link.style.marginLeft = '10px';
                 link.style.color = '#55aaff';
@@ -62,7 +62,7 @@ function LoadBlogList() {
 
 
 // 加载博客
-function LoadBlog(url) {
+function LoadBlog(path) {
     const blogContent = document.getElementById('blog');
     blogContent.innerHTML = ''; // 将内容置空
 
@@ -70,7 +70,6 @@ function LoadBlog(url) {
     const back = document.createElement('a');
     back.href = `/blog.html`;
     back.textContent = '返回';
-    back.style.marginLeft = '10px';
     back.style.color = '#55aaff';
     blogContent.appendChild(back);
 
@@ -113,14 +112,33 @@ function LoadBlog(url) {
         });
 }
 
-// 获取 URL 中的参数
-const urlParams = new URLSearchParams(window.location.search);
-const param = urlParams.get('url');
-if (param) {
-    LoadBlog(param);
-} else {
-    LoadBlogList();
+function blog(){
+    const pathParams = new URLSearchParams(window.location.search);
+    const param = pathParams.get('path');
+    if (param) {
+        LoadBlog(param);
+    } else {
+        LoadBlogList();
+    }
 }
 
-//console.log("[scripts.js] Latest Update Time:2024-3-24 22:08:11")
+// 彩蛋:点击20次分割线后显示成就
+const fgxElement = document.querySelector('#fgx');
 
+// 定义点击计数器
+let clickCount = 0;
+
+// 添加点击事件监听器
+fgxElement.addEventListener('click', () => {
+    // 每次点击计数器加1
+    clickCount++;
+    
+    // 如果点击次数达到20次，则跳转
+    if (clickCount === 20) {
+        // 构造跳转链接
+        const url = '/message.html?title=-达成成就-&content=闲&subcontent=触发原因:连续点击20次分割线';
+        
+        // 页面跳转
+        window.location.href = url;
+    }
+});
