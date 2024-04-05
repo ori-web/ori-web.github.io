@@ -14,9 +14,8 @@
 <body style="background-color:#323232;margin:0;">
 	<!-- header -->
 	<div>
-		<div id='' style="text-align:right;">
-			<ul
-				style="list-style-type:none;border-radius:0px 0px 5px 5px;margin:0;padding:0;overflow:hidden;background-color:#f0f0f0;position:fixed;top:0;width:100%;">
+		<div style="text-align:right;">
+			<ul id='header'>
 				<li class='li'>
 					<a href='#' style='color:#323232;text-decoration:none;'>
 						<img src="image\icon.png" width="20" height="20" title="Homepage">
@@ -32,10 +31,10 @@
 						<strong title="博客">博客</strong>
 					</a>
 				</li>
-				<li class='li'>
-					<p style="color:#999999;">
+				<li class='li' id="fgx">
+					<a href="javascript:void(null);" style="color:#999999;">
 						<strong title="分割线">|</strong>
-					</p>
+					</a>
 				</li>
 				<li class='li'>
 					<a href="javascript:void(null);"
@@ -103,9 +102,9 @@
 				<!--  -->
 				<article class="article">
 					<p class="date">ID: ??? | Date: ???</p>
-					<h3 class="title">如果你看到了这行字,就说明没加载出来</h3>
+					<h3 class="title">如果你看到了这行字,就说明没加载</h3>
 					<div class="content">
-						<p>如果你看到了这行字,就说明没加载出来</p>
+						<p>如果你看到了这行字,就说明没加载</p>
 					</div>
 				</article>
 			</div>
@@ -131,7 +130,9 @@
 		</div>
 </body>
 <script src="scripts\scripts.js"></script>
-
+<script>
+	blog();
+</script>
 </html>
 
 <!-- 
