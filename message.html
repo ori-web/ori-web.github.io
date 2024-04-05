@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport"
+		content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+	<title>Origin</title>
+	<base href="/">
+	<link rel="icon" href="image\icon.png">
+	<link rel="stylesheet" href="css\style.css">
+</head>
+
+<body style="background-color:#323232;margin:0;">
+	<!-- header -->
+	<div>
+		<div style="text-align:right;">
+			<ul id='header'>
+				<li class='li'>
+					<a href='#' style='color:#323232;text-decoration:none;'>
+						<img src="image\icon.png" width="20" height="20" title="Homepage">
+					</a>
+				</li>
+				<li class='li'>
+					<a href="#1" style='color:#323232;text-decoration:none;'>
+						<strong title="简介">简介</strong>
+					</a>
+				</li>
+				<li class='li'>
+					<a href="#2" style='color:#323232;text-decoration:none;'>
+						<strong title="博客">博客</strong>
+					</a>
+				</li>
+				<li class='li' id="fgx">
+					<a href="javascript:void(null);" style="color:#999999;">
+						<strong title="分割线">|</strong>
+					</a>
+				</li>
+				<li class='li'>
+					<a href="/" style="color:#55aaff;text-decoration:none;text-shadow:0px 0px 8px #55aaff;">
+						<strong title="主站">主站</strong>
+					</a>
+				</li>
+				<li class='li'>
+					<a href="/blog.html" style='color:#323232;text-decoration:none;'>
+						<strong title="Blog">Blog</strong>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<br><br><br><br>
+	<!-- main -->
+
+	<h1 id="title" style="color: #55aaff; text-align:center; font-size:40px; margin-top:20px;"></h1>
+	<p id="content" style="color: #55aaff; text-align:center; font-size:25px; margin-top:5px;"></p>
+	<p id="subcontent" style="color: #727272; text-align:center; font-size:15px; margin-top:50px;"></p>
+
+	<div>
+
+		<script src="scripts\scripts.js"></script>
+		<script>
+			// 解析 URL 中的参数
+			function getUrlParams() {
+				const params = {};
+				const urlParams = new URLSearchParams(window.location.search);
+				for (const [key, value] of urlParams) {
+					params[key] = value;
+				}
+				return params;
+			}
+
+			// 获取参数
+			const params = getUrlParams();
+
+			// 设置标题和内容
+			document.getElementById('title').innerText = params['title'] || '';
+			document.getElementById('content').innerText = params['content'] || '';
+			document.getElementById('subcontent').innerText = params['subcontent'] || '';
+		</script>
+
+</html>
+
+<!-- 
+主版本号：当功能模块有较大的变动，比如增加多个模块或者整体架构发生变化。此版本号由项目决定是否修改。
+子版本号：当功能有一定的增加或变化，比如增加了对权限控制、增加自定义视图等功能。此版本号由项目决定是否修改。
+阶段版本号：一般是 Bug 修复或是一些小的变动，要经常发布修订版，时间间隔不限，修复一个严重的bug即可发布一个修订版。此版本号由项目经理决定是否修改。
+日期版本号:用于记录修改项目的当前日期，每天对项目的修改都需要更改日期版本号。此版本号由开发人员决定是否修改。
+希腊字母版本号:此版本号用于标注当前版本的软件处于哪个开发阶段，当软件进入到另一个阶段时需要修改此版本号。此版本号由项目决定是否修改。
+
+base：
+alpha：内部版本
+beta：测试版
+demo：演示版
+enhance：增强版
+free：自由版
+full version：完整版，即正式版
+lts：长期维护版本
+release：发行版
+rc：即将作为正式版发布
+standard：标准版
+ultimate：旗舰版
+upgrade：升级版
+ -->
